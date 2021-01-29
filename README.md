@@ -2,11 +2,7 @@
 
 Predicting winner team in 'Dota2' depending on first 5 minutes of the game
 
-{
-    "match_id": 247,            # идентификатор матча
-    "start_time": 1430514316,   # дата/время начала матча, unixtime
-    "lobby_type": 0,            # тип комнаты, в которой собираются игроки 
-                                #   (расшифровка в dictionaries/lobbies.csv)
+Description
 
     # стадия выбора героев
     "picks_bans": [
@@ -19,6 +15,11 @@ Predicting winner team in 'Dota2' depending on first 5 minutes of the game
         }, 
         ...
     ],
+   
+    "match_id": 247,            # идентификатор матча
+    "start_time": 1430514316,   # дата/время начала матча, unixtime
+    "lobby_type": 0,            # тип комнаты, в которой собираются игроки 
+                                #   (расшифровка в dictionaries/lobbies.csv)
 
     # информация про каждого игрока, список ровно из 10 элементов
     # игроки с индексами от 0 до 4 — из команды Radiant, от 5 до 9 — Dire
@@ -118,4 +119,4 @@ Predicting winner team in 'Dota2' depending on first 5 minutes of the game
         "barracks_status_dire": 63,   # состояние бараков у команд к концу игры
         "barracks_status_radiant": 0  #   (см. описание битовой маски)
     }
-}
+
